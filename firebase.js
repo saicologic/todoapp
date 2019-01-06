@@ -11,14 +11,12 @@ class Firebase {
 
   addItem = async (content) => {
     return this.firestore.collection('items').add({
-      content: content,
+      content,
       createdAt: new Date(),
-    }).then(function(docRef) {
-      console.log("Document written with ID: ", docRef.id);
-
-    })
-    .catch(function(error) {
-      console.error("Error adding document: ", error);
+    }).then((docRef) => {
+      console.log('Document written with ID: ', docRef.id);
+    }).catch((error) => {
+      console.error('Error adding document: ', error);
     });
   }
 
@@ -30,12 +28,12 @@ class Firebase {
 
   complteItem = async (item) => {
     this.firestore.collection('items').doc(item.itemId).delete()
-    .then(function(docRef) {
-      console.log("Document successfully deleted!");
-    })
-    .catch(function(error) {
-      console.error("Error removing document: ", error);
-    });
+      .then(() => {
+        console.log('Document successfully deleted!');
+      })
+      .catch((error) => {
+        console.error('Error removing document: ', error);
+      });
   }
 }
 
