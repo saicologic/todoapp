@@ -8,6 +8,16 @@
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
+    "extra": {
+      "firebase": {
+        "apiKey": "",
+        "authDomain": "",
+        "databaseURL": "",
+        "projectId": "",
+        "storageBucket": "",
+        "messagingSenderId": ""
+      }
+    },
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
