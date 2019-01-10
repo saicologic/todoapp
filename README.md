@@ -1,22 +1,31 @@
 # Use Node.js
 
 ```
-$ nvm use v8.3.0
+$ nvm use v8.15.0
 ```
 
 ※ 動作確認済みのバージョンです
 
+```
+$ nvm version
+```
+
+出力結果
+```
+v8.15.0
+```
+
 # Install
-## Install expo-cli
-
-```
-$ npm install -g expo-cli
-```
-
 ## Install NPM Packages
 
 ```
 $ npm install
+```
+
+## Install expo-cli
+
+```
+$ npm install -g expo-cli
 ```
 
 # Setup
