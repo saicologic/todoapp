@@ -14,10 +14,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import firebase from './firebase';
 
 const styles = StyleSheet.create({
-  itemView: {
-  },
-  plus: {
-  },
   checkBox: {
     backgroundColor: 'white',
     borderColor: 'white',
@@ -67,7 +63,7 @@ export default class App extends React.Component {
   keyExtractor = (item, index) => index.toString()
 
   renderItem = ({ item }) => (
-    <View style={styles.itemView}>
+    <View>
       <ListItem
         containerStyle={styles.listItem}
         title={item.content}
@@ -129,7 +125,6 @@ export default class App extends React.Component {
             clearButtonMode="always"
           />
           <Icon
-            style={styles.plus}
             name="plus-circle"
             size={32}
             onPress={() => {
