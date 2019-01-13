@@ -1,7 +1,7 @@
 # Use Node.js
 
 ```
-$ nvm use v8.15.0
+$ nvm use v10.15.0
 ```
 
 ※ 動作確認済みのバージョンです
@@ -12,7 +12,7 @@ $ nvm version
 
 出力結果
 ```
-v8.15.0
+v10.15.0
 ```
 
 # Install
